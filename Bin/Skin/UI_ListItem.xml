@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window>
+	<ListContainerElement height="42" padding="0,10,0,10"  bordercolor="#FF000000" bordersize="0" >
+		<Label text="1" width="38" align="center" padding="0,0,0,0" textcolor="#FF2ABF1D" disabledtextcolor="#FFA7A6AA" font="7" />
+		<VerticalLayout>
+			<Control />
+			<Label text="订单标题" align="left" valign="vcenter" padding="5,0,0,0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" font="6" />
+			<HorizontalLayout height="22" >
+				<Label text="发帖人" width="150" align="left" valign="vcenter" padding="5,0,0,0" textcolor="#FF888888" disabledtextcolor="#FFA7A6AA" font="0" />
+				<Label text="发帖人QQ" align="left" valign="vcenter" padding="5,0,0,0" textcolor="#FF888888" disabledtextcolor="#FFA7A6AA" font="0" />
+			</HorizontalLayout>
+			<Control />
+		</VerticalLayout>
+		<Label text="价格" width="38" align="center" padding="0,0,0,0" textcolor="#FFFF0000" disabledtextcolor="#FFA7A6AA" font="6" />
+		<VerticalLayout>
+			<Control />
+			<Label text="发布时间" align="left" valign="vcenter" padding="5,0,0,0" textcolor="#FF03A9F4" disabledtextcolor="#FFA7A6AA" font="8" /> 
+			<Label text="结束时间" align="left" valign="vcenter" padding="5,0,0,0" textcolor="#FF03A9F4" disabledtextcolor="#FFA7A6AA" font="8" />
+			<Control /> 
+		</VerticalLayout>
+		<VerticalLayout>
+			<Control />
+			<HorizontalLayout height="30" childpadding="2" >
+				<Control />
+				<Button name="btn_list_item_open_qq" text="查人" width="60" padding="0,0,0,0" textcolor="#00FFFBF0" font="4" align="center" normalimage="file='control\button_all.png' source='0,0,31,32' corner='5,5,5,5'" hotimage="file='control\button_all.png' source='32,0,63,32' corner='5,5,5,5'" pushedimage="file='control\button_all.png' source='64,0,95,32' corner='5,5,5,5'" />
+				<Button name="btn_list_item_open" text="查贴" width="80" padding="0,0,0,0" textcolor="#00FFFBF0" font="4" align="center" normalimage="file='control\button_all.png' source='0,0,31,32' corner='5,5,5,5'" hotimage="file='control\button_all.png' source='32,0,63,32' corner='5,5,5,5'" pushedimage="file='control\button_all.png' source='64,0,95,32' corner='5,5,5,5'" />
+				<Control />
+			</HorizontalLayout>
+			<Control />
+		</VerticalLayout>
+	</ListContainerElement>
+</Window>

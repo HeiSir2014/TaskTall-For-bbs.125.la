@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1200,768" sizebox="3,3,3,3" caption="0,0,0,38">
+    <Font id="0" name="微软雅黑" size="12" bold="false" italic="false" />
+    <Font id="1" name="微软雅黑" size="28" bold="true" italic="false" />
+    <Font id="2" name="微软雅黑" size="16" bold="false" italic="false" />
+    <Font id="3" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="4" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Font id="5" name="微软雅黑" size="10" bold="false" italic="false" />
+    <Font id="6" name="微软雅黑" size="13" bold="true" italic="false" />
+    <Font id="7" name="微软雅黑" size="18" bold="true" italic="false" />
+    <Font id="8" name="微软雅黑" size="14" bold="false" italic="false" />
+    <Default shared="true" name="VScrollBar" value="button1normalimage=&quot;file='control\scrollbar.png' source='0,0,15,16'&quot; button1hotimage=&quot;file='control\scrollbar.png' source='16,0,31,16'&quot; button1pushedimage=&quot;file='control\scrollbar.png' source='32,0,47,16'&quot; button1disabledimage=&quot;file='control\scrollbar.png' source='48,0,63,16'&quot; button2normalimage=&quot;file='control\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='control\scrollbar.png' source='16,32,31,48'&quot; button2pushedimage=&quot;file='control\scrollbar.png' source='32,32,47,48'&quot; button2disabledimage=&quot;file='control\scrollbar.png' source='48,32,63,48'&quot; thumbnormalimage=&quot;file='control\scrollbar.png' source='0,16,11,31' corner='1,1,1,1'&quot; thumbhotimage=&quot;file='control\scrollbar.png' source='16,16,27,31' corner='1,1,1,1'&quot; thumbpushedimage=&quot;file='control\scrollbar.png' source='32,16,43,31' corner='1,1,1,1'&quot; thumbdisabledimage=&quot;file='control\scrollbar.png' source='0,16,11,31' corner='1,1,1,1'&quot; bknormalimage=&quot;file='control\scrollbar.png' source='48,16,63,31'&quot; bkhotimage=&quot;file='control\scrollbar.png' source='48,16,63,31'&quot; bkpushedimage=&quot;file='control\scrollbar.png' source='48,16,63,31'&quot; bkdisabledimage=&quot;file='control\scrollbar.png' source='48,16,63,31'&quot;" />
+	<Default shared="true" name="HScrollBar" value="button1normalimage=&quot;file='control\scrollbar.png' source='0,48,16,63'&quot; button1hotimage=&quot;file='control\scrollbar.png' source='16,48,32,63'&quot; button1pushedimage=&quot;file='control\scrollbar.png' source='32,48,48,63'&quot; button1disabledimage=&quot;file='control\scrollbar.png' source='48,48,64,63'&quot; button2normalimage=&quot;file='control\scrollbar.png' source='0,80,15,95'&quot; button2hotimage=&quot;file='control\scrollbar.png' source='16,80,31,95'&quot; button2pushedimage=&quot;file='control\scrollbar.png' source='32,80,47,95'&quot; button2disabledimage=&quot;file='control\scrollbar.png' source='48,80,63,95'&quot; thumbnormalimage=&quot;file='control\scrollbar.png' source='0,64,15,75' corner='1,1,1,1'&quot; thumbhotimage=&quot;file='control\scrollbar.png' source='16,64,31,75' corner='1,1,1,1'&quot; thumbpushedimage=&quot;file='control\scrollbar.png' source='32,64,47,75' corner='1,1,1,1'&quot; thumbdisabledimage=&quot;file='control\scrollbar.png' source='0,64,15,75' corner='1,1,1,1'&quot; bknormalimage=&quot;file='control\scrollbar.png' source='48,16,64,32'&quot; bkhotimage=&quot;file='control\scrollbar.png' source='48,16,64,32'&quot; bkpushedimage=&quot;file='control\scrollbar.png' source='48,16,64,32'&quot; bkdisabledimage=&quot;file='control\scrollbar.png' source='48,16,64,32'&quot;" />
+
+    <VerticalLayout bkimage="file='windowBkg.png' corner='5,38,120,100'">
+        <HorizontalLayout height="38">
+            <Label text="精易开发助手 V1.0" height="38" padding="5,0,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" font="2" />
+            <HorizontalLayout width="128" maxheight="20">
+                <Button name="settingbtn" width="32" height="22" maxwidth="32" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_sys_setting.png' source='0,0,31,20'" hotimage="file='btn_sys_setting.png' source='32,0,63,20'" pushedimage="file='btn_sys_setting.png' source='64,0,95,20'" />
+                <Button name="minbtn" width="32" height="22" maxwidth="32" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_sys_minimize.png' source='0,0,31,20'" hotimage="file='btn_sys_minimize.png' source='32,0,63,20'" pushedimage="file='btn_sys_minimize.png' source='64,0,95,20'" />
+                <Button name="maxbtn" width="32" height="22" maxwidth="32" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_sys_maximize.png' source='0,0,31,20'" hotimage="file='btn_sys_maximize.png' source='32,0,63,20'" pushedimage="file='btn_sys_maximize.png' source='64,0,95,20'" />
+                <Button name="restorebtn" visible="false" width="32" height="22" maxwidth="32" align="center" normalimage="file='btn_sys_restore.png' source='0,0,31,20'" hotimage="file='btn_sys_restore.png' source='32,0,63,20'" pushedimage="file='btn_sys_restore.png' source='64,0,95,20'" />
+                <Button name="closebtn" width="32" height="22" maxwidth="32" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_sys_close.png' source='0,0,31,20'" hotimage="file='btn_sys_close.png' source='32,0,63,20'" pushedimage="file='btn_sys_close.png' source='64,0,95,20'" />
+            </HorizontalLayout>
+        </HorizontalLayout>
+        <Control height="20" />
+        <HorizontalLayout>
+        	<Control width="20" />
+        	<VerticalLayout>
+				<List name="ListResult" width="1.0" height="1.0" bkcolor="#FFFFFFFF" itemlinecolor="#FFF6F6F6" item1vlinecolor="#FFA5D6E6" inset="1,0,1,0" bordercolor="#FFA0A0A0" bordersize="1" itemshowhtml="false" multiselect="false" menu="true" itemfont="2" itemalign="center" itemhotbkcolor="#FFD4EBFB" itemselectedbkcolor="#FFFEE6AE" itemaltbk="true" vscrollbar="true" hscrollbar="true" headerbkimage="control\list_header_nor.png" >
+	            	<ListHeader height="30" menu="true">
+						<ListHeaderItem text="序号" font="3" width="50" normalimage="control\list_header_nor.png" hotimage="control\list_header_hot.png" pushedimage="control\list_header_down.png" sepimage="control\list_header_sperator.png" sepwidth="1"/>
+						<ListHeaderItem text="订单帖子" font="3" width="440" normalimage="control\list_header_nor.png" hotimage="control\list_header_hot.png" pushedimage="control\list_header_down.png" sepimage="control\list_header_sperator.png" sepwidth="1"/>
+						<ListHeaderItem text="预算价格" font="3" width="120" normalimage="control\list_header_nor.png" hotimage="control\list_header_hot.png" pushedimage="control\list_header_down.png" sepimage="control\list_header_sperator.png" sepwidth="1"/>
+						<ListHeaderItem text="发布时间" font="3" width="200" normalimage="control\list_header_nor.png" hotimage="control\list_header_hot.png" pushedimage="control\list_header_down.png" sepimage="control\list_header_sperator.png" sepwidth="1"/>
+						<ListHeaderItem text="操作" font="3" width="240" normalimage="control\list_header_nor.png" hotimage="control\list_header_hot.png" pushedimage="control\list_header_down.png" sepimage="control\list_header_sperator.png" sepwidth="1"/>
+					</ListHeader>
+	        	</List>
+			</VerticalLayout>
+        	<Control width="20" />
+        </HorizontalLayout>
+		<Control height="10" />
+        <HorizontalLayout height="20">
+			<Control />
+				<Label text="语音技术由科大讯飞提供" width="160" padding="5,0,0,0" textcolor="#FF969696" disabledtextcolor="#FFA7A6AA" font="3" />
+			<Control />
+        </HorizontalLayout>
+		<Control height="20" />
+    </VerticalLayout>
+</Window>

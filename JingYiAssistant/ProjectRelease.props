@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)Bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IntDir>$(SolutionDir)Tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetName>$(ProjectName)</TargetName>
+    <LibraryPath>$(ProjectDir)source\lib_log4cpp\lib\Win32;$(ProjectDir)source\lib_json\lib;$(ProjectDir)source\curl\;$(ProjectDir)source\lib_xunfei\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir)source\lib_log4cpp\include;$(ProjectDir)source\;$(ProjectDir)source\lib_xunfei\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>MG_DISABLE_FILESYSTEM;MG_DISABLE_HEXDUMP;LOG4CPP_HAVE_IN_ADDR_T;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)source\lib_log4cpp\lib\Win32;$(ProjectDir)source\lib_json\lib;$(ProjectDir)source\curl\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Dbghelp.lib;libcurl_dll.lib;log4cppLIB.lib;json.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
